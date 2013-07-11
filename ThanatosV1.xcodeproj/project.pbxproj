@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C922043A178DA481005E0959 /* PersonsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9220439178DA481005E0959 /* PersonsTVC.m */; };
+		C9220440178DA4B0005E0959 /* PersonDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C922043F178DA4B0005E0959 /* PersonDetailTVC.m */; };
+		C9220443178DB64B005E0959 /* PersonRoleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9220442178DB64B005E0959 /* PersonRoleTVC.m */; };
+		C9313D1D178E9765000CDD52 /* CoreDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9313D1C178E9765000CDD52 /* CoreDataTableViewCell.m */; };
+		C9313D20178E97A4000CDD52 /* RolePickerTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9313D1F178E97A4000CDD52 /* RolePickerTVCell.m */; };
+		C93508B3178D7F4700EDC61E /* RolesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C93508B2178D7F4700EDC61E /* RolesTVC.m */; };
+		C93508BC178D84CE00EDC61E /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93508BB178D84CE00EDC61E /* CoreDataTableViewController.m */; };
+		C93508BF178D98B000EDC61E /* RoleDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C93508BE178D98B000EDC61E /* RoleDetailTVC.m */; };
+		C93E0D3C178C1F95000701EE /* ActivityTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E0D3B178C1F95000701EE /* ActivityTabBarViewController.m */; };
+		C93E0D3F178C1FD9000701EE /* WorkActivtyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E0D3E178C1FD9000701EE /* WorkActivtyViewController.m */; };
+		C9CB37BE178EBB8300E49545 /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB37BD178EBB8300E49545 /* Role.m */; };
+		C9CB37C1178EBB9500E49545 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB37C0178EBB9500E49545 /* Person.m */; };
+		C9CB37C4178EBBA600E49545 /* EnergyCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB37C3178EBBA600E49545 /* EnergyCategory.m */; };
+		C9E1F679178C14B6008559CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F678178C14B6008559CA /* Foundation.framework */; };
+		C9E1F67B178C14B6008559CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F67A178C14B6008559CA /* CoreGraphics.framework */; };
+		C9E1F67D178C14B6008559CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F67C178C14B6008559CA /* UIKit.framework */; };
+		C9E1F67F178C14B6008559CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F67E178C14B6008559CA /* CoreData.framework */; };
+		C9E1F685178C14B6008559CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9E1F683178C14B6008559CA /* InfoPlist.strings */; };
+		C9E1F687178C14B6008559CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E1F686178C14B6008559CA /* main.m */; };
+		C9E1F68B178C14B6008559CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E1F68A178C14B6008559CA /* AppDelegate.m */; };
+		C9E1F68E178C14B6008559CA /* ThanatosV1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9E1F68C178C14B6008559CA /* ThanatosV1.xcdatamodeld */; };
+		C9E1F690178C14B6008559CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1F68F178C14B6008559CA /* Images.xcassets */; };
+		C9E1F697178C14B6008559CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F696178C14B6008559CA /* XCTest.framework */; };
+		C9E1F698178C14B6008559CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F678178C14B6008559CA /* Foundation.framework */; };
+		C9E1F699178C14B6008559CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F67C178C14B6008559CA /* UIKit.framework */; };
+		C9E1F69A178C14B6008559CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F67E178C14B6008559CA /* CoreData.framework */; };
+		C9E1F6A2178C14B6008559CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9E1F6A0178C14B6008559CA /* InfoPlist.strings */; };
+		C9E1F6A4178C14B6008559CA /* ThanatosV1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E1F6A3178C14B6008559CA /* ThanatosV1Tests.m */; };
+		C9E1F6AF178C16FC008559CA /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F6AE178C16FC008559CA /* PassKit.framework */; };
+		C9E1F6B1178C171A008559CA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F6B0178C171A008559CA /* StoreKit.framework */; };
+		C9E1F6B3178C171E008559CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1F6B2178C171E008559CA /* MapKit.framework */; };
+		C9E1F6B7178C179B008559CA /* thanatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E1F6B6178C179B008559CA /* thanatos.storyboard */; };
+		C9E1F6BA178C17E4008559CA /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E1F6B9178C17E4008559CA /* SplashScreenViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E1F69B178C14B6008559CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E1F66D178C14B6008559CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E1F674178C14B6008559CA;
+			remoteInfo = ThanatosV1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9220438178DA481005E0959 /* PersonsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonsTVC.h; sourceTree = "<group>"; };
+		C9220439178DA481005E0959 /* PersonsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonsTVC.m; sourceTree = "<group>"; };
+		C922043E178DA4B0005E0959 /* PersonDetailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailTVC.h; sourceTree = "<group>"; };
+		C922043F178DA4B0005E0959 /* PersonDetailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailTVC.m; sourceTree = "<group>"; };
+		C9220441178DB64B005E0959 /* PersonRoleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRoleTVC.h; sourceTree = "<group>"; };
+		C9220442178DB64B005E0959 /* PersonRoleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRoleTVC.m; sourceTree = "<group>"; };
+		C9313D1B178E9765000CDD52 /* CoreDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewCell.h; sourceTree = "<group>"; };
+		C9313D1C178E9765000CDD52 /* CoreDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewCell.m; sourceTree = "<group>"; };
+		C9313D1E178E97A4000CDD52 /* RolePickerTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RolePickerTVCell.h; sourceTree = "<group>"; };
+		C9313D1F178E97A4000CDD52 /* RolePickerTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RolePickerTVCell.m; sourceTree = "<group>"; };
+		C93508B1178D7F4700EDC61E /* RolesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RolesTVC.h; sourceTree = "<group>"; };
+		C93508B2178D7F4700EDC61E /* RolesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RolesTVC.m; sourceTree = "<group>"; };
+		C93508BA178D84CE00EDC61E /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		C93508BB178D84CE00EDC61E /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		C93508BD178D98B000EDC61E /* RoleDetailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleDetailTVC.h; sourceTree = "<group>"; };
+		C93508BE178D98B000EDC61E /* RoleDetailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleDetailTVC.m; sourceTree = "<group>"; };
+		C93508C0178DA13900EDC61E /* ThanatosV 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ThanatosV 2.xcdatamodel"; sourceTree = "<group>"; };
+		C93E0D3A178C1F95000701EE /* ActivityTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTabBarViewController.h; sourceTree = "<group>"; };
+		C93E0D3B178C1F95000701EE /* ActivityTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTabBarViewController.m; sourceTree = "<group>"; };
+		C93E0D3D178C1FD9000701EE /* WorkActivtyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkActivtyViewController.h; sourceTree = "<group>"; };
+		C93E0D3E178C1FD9000701EE /* WorkActivtyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkActivtyViewController.m; sourceTree = "<group>"; };
+		C93E0D40178C1FE9000701EE /* MotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		C93E0D41178C1FE9000701EE /* MotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		C9CB37A8178EBA1D00E49545 /* ThanatosV 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThanatosV 3.xcdatamodel"; sourceTree = "<group>"; };
+		C9CB37BC178EBB8300E49545 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
+		C9CB37BD178EBB8300E49545 /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
+		C9CB37BF178EBB9500E49545 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C9CB37C0178EBB9500E49545 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		C9CB37C2178EBBA600E49545 /* EnergyCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyCategory.h; sourceTree = "<group>"; };
+		C9CB37C3178EBBA600E49545 /* EnergyCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyCategory.m; sourceTree = "<group>"; };
+		C9E1F675178C14B6008559CA /* ThanatosV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThanatosV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E1F678178C14B6008559CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9E1F67A178C14B6008559CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9E1F67C178C14B6008559CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9E1F67E178C14B6008559CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9E1F682178C14B6008559CA /* ThanatosV1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThanatosV1-Info.plist"; sourceTree = "<group>"; };
+		C9E1F684178C14B6008559CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9E1F686178C14B6008559CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9E1F688178C14B6008559CA /* ThanatosV1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThanatosV1-Prefix.pch"; sourceTree = "<group>"; };
+		C9E1F689178C14B6008559CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9E1F68A178C14B6008559CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9E1F68D178C14B6008559CA /* ThanatosV1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThanatosV1.xcdatamodel; sourceTree = "<group>"; };
+		C9E1F68F178C14B6008559CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9E1F695178C14B6008559CA /* ThanatosV1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThanatosV1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E1F696178C14B6008559CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9E1F69F178C14B6008559CA /* ThanatosV1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThanatosV1Tests-Info.plist"; sourceTree = "<group>"; };
+		C9E1F6A1178C14B6008559CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9E1F6A3178C14B6008559CA /* ThanatosV1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThanatosV1Tests.m; sourceTree = "<group>"; };
+		C9E1F6AD178C16EE008559CA /* ThanatosV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ThanatosV1.entitlements; sourceTree = "<group>"; };
+		C9E1F6AE178C16FC008559CA /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		C9E1F6B0178C171A008559CA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C9E1F6B2178C171E008559CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9E1F6B6178C179B008559CA /* thanatos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = thanatos.storyboard; sourceTree = "<group>"; };
+		C9E1F6B8178C17E4008559CA /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		C9E1F6B9178C17E4008559CA /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E1F672178C14B6008559CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E1F67B178C14B6008559CA /* CoreGraphics.framework in Frameworks */,
+				C9E1F6AF178C16FC008559CA /* PassKit.framework in Frameworks */,
+				C9E1F67F178C14B6008559CA /* CoreData.framework in Frameworks */,
+				C9E1F6B1178C171A008559CA /* StoreKit.framework in Frameworks */,
+				C9E1F6B3178C171E008559CA /* MapKit.framework in Frameworks */,
+				C9E1F67D178C14B6008559CA /* UIKit.framework in Frameworks */,
+				C9E1F679178C14B6008559CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E1F692178C14B6008559CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E1F697178C14B6008559CA /* XCTest.framework in Frameworks */,
+				C9E1F69A178C14B6008559CA /* CoreData.framework in Frameworks */,
+				C9E1F699178C14B6008559CA /* UIKit.framework in Frameworks */,
+				C9E1F698178C14B6008559CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9220433178DA40D005E0959 /* Roles */ = {
+			isa = PBXGroup;
+			children = (
+				C93508B1178D7F4700EDC61E /* RolesTVC.h */,
+				C93508B2178D7F4700EDC61E /* RolesTVC.m */,
+				C93508BD178D98B000EDC61E /* RoleDetailTVC.h */,
+				C93508BE178D98B000EDC61E /* RoleDetailTVC.m */,
+				C9313D1E178E97A4000CDD52 /* RolePickerTVCell.h */,
+				C9313D1F178E97A4000CDD52 /* RolePickerTVCell.m */,
+			);
+			name = Roles;
+			sourceTree = "<group>";
+		};
+		C9220434178DA415005E0959 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C9313D1B178E9765000CDD52 /* CoreDataTableViewCell.h */,
+				C9313D1C178E9765000CDD52 /* CoreDataTableViewCell.m */,
+				C9E1F689178C14B6008559CA /* AppDelegate.h */,
+				C9E1F68A178C14B6008559CA /* AppDelegate.m */,
+				C93508BA178D84CE00EDC61E /* CoreDataTableViewController.h */,
+				C93508BB178D84CE00EDC61E /* CoreDataTableViewController.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C9220435178DA420005E0959 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				C9220438178DA481005E0959 /* PersonsTVC.h */,
+				C9220439178DA481005E0959 /* PersonsTVC.m */,
+				C922043E178DA4B0005E0959 /* PersonDetailTVC.h */,
+				C922043F178DA4B0005E0959 /* PersonDetailTVC.m */,
+				C9220441178DB64B005E0959 /* PersonRoleTVC.h */,
+				C9220442178DB64B005E0959 /* PersonRoleTVC.m */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		C9220436178DA43E005E0959 /* Roles */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB37BC178EBB8300E49545 /* Role.h */,
+				C9CB37BD178EBB8300E49545 /* Role.m */,
+			);
+			name = Roles;
+			sourceTree = "<group>";
+		};
+		C9220437178DA44A005E0959 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB37BF178EBB9500E49545 /* Person.h */,
+				C9CB37C0178EBB9500E49545 /* Person.m */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		C93508A6178D783D00EDC61E /* Table Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9220435178DA420005E0959 /* People */,
+				C9220434178DA415005E0959 /* Core */,
+				C9220433178DA40D005E0959 /* Roles */,
+			);
+			name = "Table Controllers";
+			sourceTree = "<group>";
+		};
+		C93508A7178D784800EDC61E /* Data Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB37B2178EBAC100E49545 /* Energy Category */,
+				C9220437178DA44A005E0959 /* People */,
+				C9220436178DA43E005E0959 /* Roles */,
+			);
+			name = "Data Controllers";
+			sourceTree = "<group>";
+		};
+		C9CB37B2178EBAC100E49545 /* Energy Category */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB37C2178EBBA600E49545 /* EnergyCategory.h */,
+				C9CB37C3178EBBA600E49545 /* EnergyCategory.m */,
+			);
+			name = "Energy Category";
+			sourceTree = "<group>";
+		};
+		C9E1F66C178C14B6008559CA = {
+			isa = PBXGroup;
+			children = (
+				C9E1F680178C14B6008559CA /* ThanatosV1 */,
+				C9E1F69D178C14B6008559CA /* ThanatosV1Tests */,
+				C9E1F677178C14B6008559CA /* Frameworks */,
+				C9E1F676178C14B6008559CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E1F676178C14B6008559CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F675178C14B6008559CA /* ThanatosV1.app */,
+				C9E1F695178C14B6008559CA /* ThanatosV1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E1F677178C14B6008559CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F6B2178C171E008559CA /* MapKit.framework */,
+				C9E1F6B0178C171A008559CA /* StoreKit.framework */,
+				C9E1F6AE178C16FC008559CA /* PassKit.framework */,
+				C9E1F678178C14B6008559CA /* Foundation.framework */,
+				C9E1F67A178C14B6008559CA /* CoreGraphics.framework */,
+				C9E1F67C178C14B6008559CA /* UIKit.framework */,
+				C9E1F67E178C14B6008559CA /* CoreData.framework */,
+				C9E1F696178C14B6008559CA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9E1F680178C14B6008559CA /* ThanatosV1 */ = {
+			isa = PBXGroup;
+			children = (
+				C93508A7178D784800EDC61E /* Data Controllers */,
+				C93508A6178D783D00EDC61E /* Table Controllers */,
+				C9E1F6B5178C177B008559CA /* View Controllers */,
+				C9E1F6AD178C16EE008559CA /* ThanatosV1.entitlements */,
+				C9E1F68F178C14B6008559CA /* Images.xcassets */,
+				C9E1F68C178C14B6008559CA /* ThanatosV1.xcdatamodeld */,
+				C9E1F681178C14B6008559CA /* Supporting Files */,
+				C9E1F6B6178C179B008559CA /* thanatos.storyboard */,
+			);
+			path = ThanatosV1;
+			sourceTree = "<group>";
+		};
+		C9E1F681178C14B6008559CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F682178C14B6008559CA /* ThanatosV1-Info.plist */,
+				C9E1F683178C14B6008559CA /* InfoPlist.strings */,
+				C9E1F686178C14B6008559CA /* main.m */,
+				C9E1F688178C14B6008559CA /* ThanatosV1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9E1F69D178C14B6008559CA /* ThanatosV1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F6A3178C14B6008559CA /* ThanatosV1Tests.m */,
+				C9E1F69E178C14B6008559CA /* Supporting Files */,
+			);
+			path = ThanatosV1Tests;
+			sourceTree = "<group>";
+		};
+		C9E1F69E178C14B6008559CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F69F178C14B6008559CA /* ThanatosV1Tests-Info.plist */,
+				C9E1F6A0178C14B6008559CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9E1F6B5178C177B008559CA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E1F6B8178C17E4008559CA /* SplashScreenViewController.h */,
+				C9E1F6B9178C17E4008559CA /* SplashScreenViewController.m */,
+				C93E0D3A178C1F95000701EE /* ActivityTabBarViewController.h */,
+				C93E0D3B178C1F95000701EE /* ActivityTabBarViewController.m */,
+				C93E0D3D178C1FD9000701EE /* WorkActivtyViewController.h */,
+				C93E0D3E178C1FD9000701EE /* WorkActivtyViewController.m */,
+				C93E0D40178C1FE9000701EE /* MotionViewController.h */,
+				C93E0D41178C1FE9000701EE /* MotionViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9E1F674178C14B6008559CA /* ThanatosV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E1F6A7178C14B6008559CA /* Build configuration list for PBXNativeTarget "ThanatosV1" */;
+			buildPhases = (
+				C9E1F671178C14B6008559CA /* Sources */,
+				C9E1F672178C14B6008559CA /* Frameworks */,
+				C9E1F673178C14B6008559CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThanatosV1;
+			productName = ThanatosV1;
+			productReference = C9E1F675178C14B6008559CA /* ThanatosV1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9E1F694178C14B6008559CA /* ThanatosV1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E1F6AA178C14B6008559CA /* Build configuration list for PBXNativeTarget "ThanatosV1Tests" */;
+			buildPhases = (
+				C9E1F691178C14B6008559CA /* Sources */,
+				C9E1F692178C14B6008559CA /* Frameworks */,
+				C9E1F693178C14B6008559CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E1F69C178C14B6008559CA /* PBXTargetDependency */,
+			);
+			name = ThanatosV1Tests;
+			productName = ThanatosV1Tests;
+			productReference = C9E1F695178C14B6008559CA /* ThanatosV1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E1F66D178C14B6008559CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "AG Technical Solutions";
+				TargetAttributes = {
+					C9E1F674178C14B6008559CA = {
+						DevelopmentTeam = 99CR8TA6NU;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C9E1F694178C14B6008559CA = {
+						TestTargetID = C9E1F674178C14B6008559CA;
+					};
+				};
+			};
+			buildConfigurationList = C9E1F670178C14B6008559CA /* Build configuration list for PBXProject "ThanatosV1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9E1F66C178C14B6008559CA;
+			productRefGroup = C9E1F676178C14B6008559CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E1F674178C14B6008559CA /* ThanatosV1 */,
+				C9E1F694178C14B6008559CA /* ThanatosV1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E1F673178C14B6008559CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E1F685178C14B6008559CA /* InfoPlist.strings in Resources */,
+				C9E1F6B7178C179B008559CA /* thanatos.storyboard in Resources */,
+				C9E1F690178C14B6008559CA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E1F693178C14B6008559CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E1F6A2178C14B6008559CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E1F671178C14B6008559CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9220443178DB64B005E0959 /* PersonRoleTVC.m in Sources */,
+				C9E1F68E178C14B6008559CA /* ThanatosV1.xcdatamodeld in Sources */,
+				C93E0D3C178C1F95000701EE /* ActivityTabBarViewController.m in Sources */,
+				C9E1F6BA178C17E4008559CA /* SplashScreenViewController.m in Sources */,
+				C9CB37C1178EBB9500E49545 /* Person.m in Sources */,
+				C9E1F68B178C14B6008559CA /* AppDelegate.m in Sources */,
+				C9313D20178E97A4000CDD52 /* RolePickerTVCell.m in Sources */,
+				C9220440178DA4B0005E0959 /* PersonDetailTVC.m in Sources */,
+				C93508BC178D84CE00EDC61E /* CoreDataTableViewController.m in Sources */,
+				C93508BF178D98B000EDC61E /* RoleDetailTVC.m in Sources */,
+				C93E0D3F178C1FD9000701EE /* WorkActivtyViewController.m in Sources */,
+				C9E1F687178C14B6008559CA /* main.m in Sources */,
+				C922043A178DA481005E0959 /* PersonsTVC.m in Sources */,
+				C9CB37BE178EBB8300E49545 /* Role.m in Sources */,
+				C9313D1D178E9765000CDD52 /* CoreDataTableViewCell.m in Sources */,
+				C93508B3178D7F4700EDC61E /* RolesTVC.m in Sources */,
+				C9CB37C4178EBBA600E49545 /* EnergyCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E1F691178C14B6008559CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E1F6A4178C14B6008559CA /* ThanatosV1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9E1F69C178C14B6008559CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E1F674178C14B6008559CA /* ThanatosV1 */;
+			targetProxy = C9E1F69B178C14B6008559CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9E1F683178C14B6008559CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E1F684178C14B6008559CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9E1F6A0178C14B6008559CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E1F6A1178C14B6008559CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9E1F6A5178C14B6008559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C9E1F6A6178C14B6008559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9E1F6A8178C14B6008559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ThanatosV1/ThanatosV1.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThanatosV1/ThanatosV1-Prefix.pch";
+				INFOPLIST_FILE = "ThanatosV1/ThanatosV1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9E1F6A9178C14B6008559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ThanatosV1/ThanatosV1.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThanatosV1/ThanatosV1-Prefix.pch";
+				INFOPLIST_FILE = "ThanatosV1/ThanatosV1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9E1F6AB178C14B6008559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThanatosV1.app/ThanatosV1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThanatosV1/ThanatosV1-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ThanatosV1Tests/ThanatosV1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9E1F6AC178C14B6008559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThanatosV1.app/ThanatosV1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThanatosV1/ThanatosV1-Prefix.pch";
+				INFOPLIST_FILE = "ThanatosV1Tests/ThanatosV1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E1F670178C14B6008559CA /* Build configuration list for PBXProject "ThanatosV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E1F6A5178C14B6008559CA /* Debug */,
+				C9E1F6A6178C14B6008559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E1F6A7178C14B6008559CA /* Build configuration list for PBXNativeTarget "ThanatosV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E1F6A8178C14B6008559CA /* Debug */,
+				C9E1F6A9178C14B6008559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E1F6AA178C14B6008559CA /* Build configuration list for PBXNativeTarget "ThanatosV1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E1F6AB178C14B6008559CA /* Debug */,
+				C9E1F6AC178C14B6008559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9E1F68C178C14B6008559CA /* ThanatosV1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C93508C0178DA13900EDC61E /* ThanatosV 2.xcdatamodel */,
+				C9CB37A8178EBA1D00E49545 /* ThanatosV 3.xcdatamodel */,
+				C9E1F68D178C14B6008559CA /* ThanatosV1.xcdatamodel */,
+			);
+			currentVersion = C9CB37A8178EBA1D00E49545 /* ThanatosV 3.xcdatamodel */;
+			path = ThanatosV1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C9E1F66D178C14B6008559CA /* Project object */;
+}
